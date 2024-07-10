@@ -17,14 +17,14 @@ def main():
     frame.grid(column=0, row=0, sticky=(N, W, E, S))
 
     # Buttons
-    pwroff_img = PhotoImage(file="/home/Abner/.Scripts/Poweroff-menu/Power-Off.png")
+    pwroff_img = PhotoImage(file="Power-Off.png")
     power_off = ttk.Button(
         frame, image=pwroff_img, command=lambda: os.system("systemctl poweroff")
     )
     power_off.grid(column=6, row=1, sticky=E)
 
     rstrt_img = PhotoImage(
-        file="/home/Abner/.Scripts/Poweroff-menu/shutdown buttom.png"
+        file="shutdown buttom.png"
     )
     restart = ttk.Button(
         frame,
@@ -33,7 +33,7 @@ def main():
     )
     restart.grid(column=4, row=1, sticky=E)
 
-    lgout_img = PhotoImage(file="/home/Abner/.Scripts/Poweroff-menu/exit-sign.png")
+    lgout_img = PhotoImage(file="exit-sign.png")
     logout = ttk.Button(frame, image=lgout_img, command=lambda: os.system("kill -9 -1"))
     logout.grid(column=2, row=1, sticky=W)
 
